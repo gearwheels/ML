@@ -1,0 +1,18 @@
+\section{Тест производительности}
+
+Чтобы провести тест производительности сравним время выполнения нашей сортировки и готовой сортировки $std::stable\_sort$.
+Первый тест состоит из 1000 строк, второй из 100000 срок, третий из 1000000 строк.
+
+\begin{alltt}
+dude@DESKTOP-9IO9OQQ:/mnt/d/Ycheba2kurs/DA/1$ ./solution <1k.txt 
+RadixSort 1.912 ms
+std::stable_sort 3.945 ms
+dude@DESKTOP-9IO9OQQ:/mnt/d/Ycheba2kurs/DA/1$ ./solution <100k.txt
+RadixSort 8.312 ms
+std::stable_sort 65.480 ms
+dude@DESKTOP-9IO9OQQ:/mnt/d/Ycheba2kurs/DA/1$ ./solution <1kk.txt
+RadixSort 58.515 ms
+std::stable_sort 760.914 ms
+\end{alltt}
+
+\pagebreak
